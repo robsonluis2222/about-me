@@ -135,7 +135,12 @@ button {
   
 .link-span {
     display: inline-block;
+    color: black;
     transform: skew(21deg);
+  }
+  a{
+    text-decoration: none;
+    outline: none;
   }
   
   .github::before {
