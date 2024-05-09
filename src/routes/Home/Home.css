@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+.Home{
+    background-color: #2d3436;
+    min-height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-img{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+}
+.me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+.my-name{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+    color: #6c5ce7;
+    text-align: center;
+    transition: 1s;
+}
+.my-name:hover{
+    color: #4b40a0;
+}
+.am{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+    text-align: center;
+    color: #fdcb6e;
+    margin-bottom: 30px;
+    transition: 1s;
+}
+.am:hover{
+    color: #ca983b;
+}
+.titles-span{
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #b2bec3;
+    cursor: pointer;
+    transition: 1s;
+}
+.titles-span:hover{
+    color: #636e72;
+}
+.skills-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.skills{
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skill{
+    width: 200px;
+    height: 200px;
+    gap: 10px;
+    border-radius: 50%;
+    background: linear-gradient(#74b9ff, #81ecec);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 1s;
+}
+.skill:hover{
+    transform: scale(1.1);
+    background: linear-gradient(#81ecec, #74b9ff);
+}
+.skill-name{
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+i{
+    color: black;
+    font-size: 30px;
+}
+.links{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.btns-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+button {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+  }
+  
+.link-span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+  .github::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #1F2328;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  .linkedin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #0A66C2;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  .whatsapp::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #4CC759;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  .techs-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .techs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    margin-bottom: 40px;
+  }
+  .glass-tech {
+    width: 150px;
+    height: 150px;
+    background-color: #55efc4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.glass-tech:hover{
+    transform: scale(1.1);
+}
+
+.glass-tech img{
+    width: 80px;
+}
